@@ -30,28 +30,39 @@ body{
     
  }
  /* Footer */
- .f-info-links a{
+.f-info-links a{
     text-decoration: none;
     color: #222222;
- }
+}
 
- .f-info-links a:hover{
+.f-info-links a:hover{
     color: #222222;
     text-decoration: underline;
- }
+}
 
- .f-info-links, .f-info-socials, .f-info-brand{
+.f-info-links, .f-info-socials, .f-info-brand{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- .f-info-socials i{
+/* Fix for social icons */
+.f-info-socials i{
     font-size: 1.2rem;
     margin-right: 1rem;
+    color: #222222; /* Adding explicit color to prevent blue links */
+}
 
- }
+/* If icons are inside links, target them directly */
+.f-info-socials a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-socials a:hover {
+    color: #222222;
+}
 
 .f-info{
     text-align: center;
@@ -61,6 +72,11 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-evenly; 
+}
+
+/* Brand text color fix */
+.f-info-brand {
+    color: #222222;
 }
 
 /* Cards */
